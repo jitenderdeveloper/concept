@@ -1,4 +1,3 @@
-
 # MONITORING — COMPLETE PROJECT BLUEPRINT
 
 This document is a **production-grade technical blueprint** covering **API, Database, Mobile App (APK), and Server Architecture** for the MONITORING Smart Campus System.
@@ -60,34 +59,34 @@ Architecture Style: **Microservices + Realtime + Multi-tenant SaaS**
 
 ## Authentication
 
-POST /auth/login  
-POST /auth/logout  
-POST /auth/refresh  
-POST /auth/device-bind  
+POST /auth/login
+POST /auth/logout
+POST /auth/refresh
+POST /auth/device-bind
 
 ## Attendance
 
-POST /attendance/qr-scan  
-POST /attendance/manual  
-POST /attendance/enter  
-POST /attendance/exit  
-GET /attendance/report  
+POST /attendance/qr-scan
+POST /attendance/manual
+POST /attendance/enter
+POST /attendance/exit
+GET /attendance/report
 
 ## Geo Tracking
 
-POST /geo/update  
-GET /geo/status  
-GET /geo/timeline  
+POST /geo/update
+GET /geo/status
+GET /geo/timeline
 
 ## Notifications
 
-POST /notify/send  
-GET /notify/list  
+POST /notify/send
+GET /notify/list
 
 ## Users
 
-GET /user/profile  
-PATCH /user/update  
+GET /user/profile
+PATCH /user/update
 
 ## Security Rules
 
@@ -182,7 +181,7 @@ id, date, title, created_by
 2. Attendance ENTER recorded
 3. Geo tracking activated
 4. Geo radius monitored
-5. If violation → alert triggered
+5. If violation -> alert triggered
 6. Notification sent to Teacher/Admin/Parent
 
 ---
@@ -215,7 +214,7 @@ id, date, title, created_by
 
 # 9. DEPLOYMENT FLOW
 
-Developer → Git → CI/CD → Docker Build → Kubernetes Deploy → Cloud → Monitoring
+Developer -> Git -> CI/CD -> Docker Build -> Kubernetes Deploy -> Cloud -> Monitoring
 
 Monitoring tools:
 
@@ -227,7 +226,7 @@ Monitoring tools:
 
 # 10. SYSTEM DATA FLOW
 
-Mobile App → API Gateway → Microservices → Database → Realtime Engine → Mobile/Admin Dashboard
+Mobile App -> API Gateway -> Microservices -> Database -> Realtime Engine -> Mobile/Admin Dashboard
 
 ---
 

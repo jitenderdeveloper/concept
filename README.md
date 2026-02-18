@@ -1,7 +1,7 @@
+# MONITORING — Smart Campus Monitoring & Attendance Platform
 
-# 📘 MONITORING — Smart Campus Monitoring & Attendance Platform
+## Overview
 
-## 🚀 Overview
 **MONITORING** is a Smart Campus SaaS platform for Schools, Colleges, and Institutes that provides:
 
 - QR Based Attendance
@@ -17,46 +17,53 @@ This system improves **discipline, safety, transparency, and automation** across
 
 ---
 
-# 🎯 Core Features
+# Core Features
 
-## 📷 QR Attendance
+## QR Attendance
+
 - Unique QR per college
 - ENTER / EXIT attendance
 - One ENTER & EXIT per day
 - Late & early exit rules
 - Time window validation
 
-## 🧾 Manual Attendance
+## Manual Attendance
+
 - Teacher / Principal / Management can add
 - ENTER + EXIT mandatory
 - Late reason required
 - Audit tracking (who added)
 
-## 📍 Geo Tracking
+## Geo Tracking
+
 - Live location after ENTER
 - Geo radius monitoring
 - Alert if student leaves campus
 - Geo timeline tracking
 
-## 🔔 Notification Engine
-- Admin → Teacher / Student
-- Teacher → Student
+## Notification Engine
+
+- Admin -> Teacher / Student
+- Teacher -> Student
 - Custom + system alerts
 - Geo violation alerts
 
-## 📊 Reports & Analytics
+## Reports & Analytics
+
 - Monthly attendance report
 - Performance analytics
 - Discipline score
 - Geo violation tracking
 
-## 👨‍👩‍👧 Parents Monitoring
+## Parents Monitoring
+
 - Live child location (always ON)
 - Attendance & reports
 - Alerts & notifications
 - Performance tracking
 
-## 🔐 Security
+## Security
+
 - JWT + Device Binding
 - RBAC + Permission
 - Fake GPS detection
@@ -66,7 +73,7 @@ This system improves **discipline, safety, transparency, and automation** across
 
 ---
 
-# 🎭 Roles
+# Roles
 
 - SuperAdmin
 - TechTeam
@@ -80,7 +87,7 @@ Each role has **restricted & permission-based access**.
 
 ---
 
-# 🧠 System Architecture Diagram
+# System Architecture Diagram
 
 ```mermaid
 flowchart LR
@@ -103,7 +110,7 @@ WS --> Mobile
 
 ---
 
-# 📱 App Flow Diagram
+# App Flow Diagram
 
 ```mermaid
 flowchart TD
@@ -112,8 +119,8 @@ B --> C[Dashboard]
 C --> D[Scan QR]
 D --> E[ENTER Attendance]
 E --> F[Geo Tracking ON]
-F --> G[Alerts]
-G --> H[EXIT Attendance]
+F -->|User Action| H[EXIT Attendance]
+F -->|Violation| G[Alerts]
 H --> I[Geo Tracking OFF]
 C --> J[Reports]
 C --> K[Profile]
@@ -121,7 +128,7 @@ C --> K[Profile]
 
 ---
 
-# 🗄 Database ER Diagram
+# Database ER Diagram
 
 ```mermaid
 erDiagram
@@ -167,7 +174,7 @@ datetime timestamp
 
 ---
 
-# 🔐 Security Architecture Diagram
+# Security Architecture Diagram
 
 ```mermaid
 flowchart LR
@@ -181,7 +188,7 @@ APIGW --> FRAUD[Fraud Engine]
 
 ---
 
-# 💰 Business Model
+# Business Model
 
 - SaaS subscription per student
 - Per college license
@@ -190,7 +197,7 @@ APIGW --> FRAUD[Fraud Engine]
 
 ---
 
-# 📈 Future Enhancements
+# Future Enhancements
 
 - Face Recognition Attendance
 - AI Risk Detection
@@ -202,7 +209,6 @@ APIGW --> FRAUD[Fraud Engine]
 
 ---
 
-# 🏁 Conclusion
+# Conclusion
 
 **MONITORING** is a complete **Smart, Secure, and Scalable Campus Monitoring Platform** providing real-time tracking, fraud-resistant attendance, parent transparency, and enterprise-grade security.
-
